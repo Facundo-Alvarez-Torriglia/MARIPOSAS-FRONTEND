@@ -1,41 +1,58 @@
-import React, { useState } from "react";
+
+import { useState } from "react";
+import logo from "../../assets/Logo.png";
 import { Link } from "react-router-dom";
 
 export const Nabvar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [datos, setDatos] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
+  const changeVisible = () => {
+   
+      setDatos(!datos);
+
+
   };
 
   return (
-    <nav className="bg-[--color4] p-4 text-black mb-2">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white font-bold text-xl">
-          Mi Sitio Web
-        </div>
-        <div className="md:hidden">
-          <button
-            onClick={toggleMenu}
-            className="text-white hover:text-blue-300"
-            aria-label="Toggle Menu"
+    <nav className=" items-center  bg-[--color4] p-4">
+      <div className="flex flex-row  items-center justify-between w-full top-0">
+        <img src={logo} alt="logo mariposas" className="h-20" />
+
+        <h1 className="text-white ">Mariposas App</h1>
+
+        <button
+          className="block lg:hidden border border-gray-200 p-2 rounded-md text-gray-200 hover:text-white focus:outline-none focus:text-white"
+          onClick={changeVisible}
+        >
+
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
+            <path
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
-        <ul className={`hidden md:flex space-x-4 ${menuOpen ? "md:hidden" : ""}`}>
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div>
+ 
+        <ul
+          className={
+            datos
+              ? "flex flex-col gap-9 h-screen justify-center items-center animate-fadeIn"
+              : "hidden lg:flex lg:space-x-4 justify-end"
+          }
+        
+        >
           <li>
-            <Link to="/" className="text-white hover:text-blue-300">Inicio</Link>
+            <Link to="/" className="text-white hover:text-blue-300" >Inicio</Link>
           </li>
           <li>
             <Link to="/noticias" className="text-white hover:text-blue-300">Noticias</Link>
@@ -51,5 +68,3 @@ export const Nabvar = () => {
     </nav>
   );
 };
-
-
