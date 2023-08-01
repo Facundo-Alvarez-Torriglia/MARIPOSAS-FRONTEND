@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const Login = () => {
   const [username, setUsername] = useState('');
@@ -18,6 +19,12 @@ export const Login = () => {
     // Por ejemplo, enviar los datos del usuario y contraseña al servidor
     // para autenticar al usuario.
   };
+
+  const navigate = useNavigate();
+
+  const irAlRegistro = ()=>{
+    navigate('/auth/registro')
+  }
 
   return (
     <div className="flex justify-center items-center h-screen">
@@ -61,7 +68,7 @@ export const Login = () => {
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 rounded focus:outline-none focus:shadow-outline"
           type="submit"
-          onClick={handleSubmit}
+          onClick={irAlRegistro}
         >
           Registrarse
         </button>

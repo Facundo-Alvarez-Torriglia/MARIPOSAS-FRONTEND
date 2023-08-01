@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --color1: #190019;
+    --color2: #2B124C;
+    --color3: #522B5B;
+    --color4: #854F6C;
+    --color5: #DFB6B2;
+    --color6: #FBE4D8;
+    --blanco: white;
+    --negro: black;
+    --poppins: 'Poppins', sans-serif;
+    --dancing: 'Dancing Script', cursive;
+}
+
+body{
+    font-family: var(--dancing);
+    background-color: var(--color5);
+}
