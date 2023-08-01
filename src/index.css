@@ -26,3 +26,6 @@ body{
     font-family: var(--dancing);
     background-color: var(--color5);
 }
+h1{
+    font-size: 2rem;
+}
