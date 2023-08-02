@@ -2,6 +2,7 @@
 import { useState } from "react";
 import logo from "../../assets/Logo.png";
 import { Link } from "react-router-dom";
+import { RedesSociales } from "../utils";
 
 export const Nabvar = () => {
   const [datos, setDatos] = useState(false);
@@ -14,7 +15,10 @@ export const Nabvar = () => {
   };
 
   return (
-    <nav className={datos? "items-center justify-between bg-[--color4] p-4" : " flex flex-row items-center justify-between bg-[--color4] p-4"}>
+    <>
+    <RedesSociales/>
+    <hr className="text-white"/>
+      <nav className={datos? "items-center justify-between bg-[--color4] p-4" : " flex flex-row items-center justify-between bg-[--color4] p-4"}>
 
    {/* <nav className=" flex flex-row items-center justify-between bg-[--color4] p-4">*/} 
       <div className="flex flex-row  items-center  w-full top-0">
@@ -68,5 +72,7 @@ export const Nabvar = () => {
         </ul>
       </div>
     </nav>
+    </>
+  
   );
 };
