@@ -14,14 +14,16 @@ export const Nabvar = () => {
   };
 
   return (
-    <nav className=" items-center  bg-[--color4] p-4">
-      <div className="flex flex-row  items-center justify-between w-full top-0">
+    <nav className={datos? "items-center justify-between bg-[--color4] p-4" : " flex flex-row items-center justify-between bg-[--color4] p-4"}>
+
+   {/* <nav className=" flex flex-row items-center justify-between bg-[--color4] p-4">*/} 
+      <div className="flex flex-row  items-center  w-full top-0">
         <img src={logo} alt="logo mariposas" className="h-20" />
 
         <h1 className="text-white ">Mariposas App</h1>
 
         <button
-          className="block lg:hidden border border-gray-200 p-2 rounded-md text-gray-200 hover:text-white focus:outline-none focus:text-white"
+          className="block lg:hidden border border-gray-200 p-2 rounded-md text-gray-200 hover:text-white focus:outline-none focus:text-white ml-auto"
           onClick={changeVisible}
         >
 
@@ -51,16 +53,16 @@ export const Nabvar = () => {
           }
         
         >
-          <li>
+          <li onClick={()=> setDatos(false)}>
             <Link to="/" className="text-white hover:text-blue-300" >Inicio</Link>
           </li>
-          <li>
+          <li onClick={()=> setDatos(false)}>
             <Link to="/noticias" className="text-white hover:text-blue-300">Noticias</Link>
           </li>
-          <li>
+          <li onClick={()=> setDatos(false)}>
             <Link to="/clasificados" className="text-white hover:text-blue-300">Clasificados</Link>
           </li>
-          <li>
+          <li onClick={()=> setDatos(false)}>
             <Link to="/auth/login" className="text-white hover:text-blue-300">Logearse</Link>
           </li>
         </ul>
