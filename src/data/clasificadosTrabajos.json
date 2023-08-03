@@ -1,0 +1,55 @@
+{
+    "puestosDeTrabajo": [
+      {
+        "id": 1,
+        "titulo": "Desarrollador Full Stack",
+        "descripcion": "Buscamos un desarrollador Full Stack con experiencia en React y Node.js.",
+        "empresa": "Tech Solutions",
+        "ubicacion": "Ciudad de México",
+        "salario": "$2000 - $2500",
+        "fechaPublicacion": "2023-08-02",
+        "contactoEmail": "contacto@techsolutions.com"
+      },
+      {
+        "id": 2,
+        "titulo": "Diseñador Gráfico",
+        "descripcion": "Se busca diseñador gráfico para crear materiales visuales creativos.",
+        "empresa": "Creative Designs",
+        "ubicacion": "Madrid, España",
+        "salario": "A convenir",
+        "fechaPublicacion": "2023-08-02",
+        "contactoEmail": "contacto@creativedesigns.com"
+      },
+      {
+        "id": 3,
+        "titulo": "Asistente Administrativo",
+        "descripcion": "Empresa busca asistente administrativo para tareas de oficina.",
+        "empresa": "Business Solutions",
+        "ubicacion": "São Paulo, Brasil",
+        "salario": "$1500 - $1800",
+        "fechaPublicacion": "2023-08-02",
+        "contactoEmail": "contacto@businesssolutions.com"
+      },
+      {
+        "id": 4,
+        "titulo": "Ingeniero de Software",
+        "descripcion": "Se requiere ingeniero de software con experiencia en Java y SQL.",
+        "empresa": "Tech Innovations",
+        "ubicacion": "Londres, Reino Unido",
+        "salario": "£2500 - £3000",
+        "fechaPublicacion": "2023-08-02",
+        "contactoEmail": "contacto@techinnovations.com"
+      },
+      {
+        "id": 5,
+        "titulo": "Contador Senior",
+        "descripcion": "Empresa de contabilidad busca contador senior con experiencia en impuestos.",
+        "empresa": "Accounting Experts",
+        "ubicacion": "Nueva York, Estados Unidos",
+        "salario": "$3000 - $3500",
+        "fechaPublicacion": "2023-08-02",
+        "contactoEmail": "contacto@accountingexperts.com"
+      }
+    ]
+  }
+  
