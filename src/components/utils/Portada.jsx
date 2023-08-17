@@ -1,4 +1,4 @@
-import portada from '../../assets/portadaHome.jpg';
+import portada from '../../assets/img/mariposa1.jpg';
 
 export const Portada = () => {
   return (
