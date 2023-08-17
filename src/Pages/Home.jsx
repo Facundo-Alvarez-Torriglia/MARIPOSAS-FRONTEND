@@ -1,7 +1,10 @@
-import { Portada } from "../components/utils"
+import { CotizacionDolarBlue, Portada } from "../components/utils"
 
 export const Home = () => {
     return (
-        <Portada/>
+        <>
+            <Portada />
+            <CotizacionDolarBlue />
+        </>
     )
 } 

@@ -30,3 +30,21 @@ h1{
     font-size: 2rem;
     font-weight: 700;
 }
+
+/*COTIZACION DOLAR*/
+.iframe-container {
+    width: 320px;
+    height: 260px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    border: 1px solid #bcbcbc;
+  }
+  
+  .custom-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
